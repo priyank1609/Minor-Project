@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex; /* Wrap entire content in flexbox */
+  min-height: 100vh; /* Set minimum height to viewport height */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+header img {
+  width: 150px; /* Adjust width (optional) */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ddd; /* Solid border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.2s ease-in-out; /* Smooth border transition */
+}
+
+header img:hover {
+  border-color: #333; /* Change border color on hover */
+}
+
+header nav {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+}
+
+header nav button {
+  padding: 0.7rem 1.5rem; /* Adjust padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #2196F3; /* Blue background color */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+header nav button:hover {
+  background-color: #1775e1; /* Darker blue on hover */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+main { /* Apply flexbox and set height to 100% */
+  display: flex;
+  flex: 1; /* Make main element grow */
+  height: 100%; /* Set height to 100% explicitly */
+}
+
+aside {
+  width: 20%; /* Adjust navigation width */
+  padding: 1rem;
+  background-color: #e0e0e0;
+}
+
+aside button {
+  padding: 0.75rem 1rem; /* Increase padding for bigger buttons */
+  border: none; /* Remove default border (optional) */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 1rem; /* Adjust font size for bigger text (optional) */
+  cursor: pointer; /* Indicate clickable behavior */
+  background-color: #f0f0f0; /* Set button background color (optional) */
+}
+
+aside ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+aside button:hover { /* Hover effect (optional) */
+  background-color: #ddd; /* Change background color on hover */
+}
+
+section {
+  flex: 1; /* Make section take up remaining space */
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #ddd;
+  position: fixed; /* Fix footer position */
+  bottom: 0; /* Position footer at bottom */
+  width: 100%; /* Set footer width to 100% */
+}
+
+.nav-item {
+  padding: 0.5rem 1rem; /* Adjust padding */
+  border-bottom: 1px solid #ddd; /* Optional: Add a separator line */
+}
+
+.content {
+  display: none; /* Initially hide all content sections */
+  padding: 1rem;
+}
+
+.nav-item.selected {
+  background-color: #2196F3; /* Blue background */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold;
+  color: #fff; /* White text color for contrast */
+}
+
+#introduction {
+  font-size: 20px;
+}
+
+#symmetricCryptography {
+  font-size: 20px;
+}
+
+#asymmetricCryptography {
+  font-size: 20px;
+}
+
+#simulator {
+  font-size: 20px;
+}
+
+#cryptography {
+  font-size: 20px;
+}
+
+#cryptographyTypes {
+  font-size: 20px;
+}
+
+.content-wrapper {
+  padding-bottom: calc(footer-height); /* Add padding to account for fixed footer */
+}
+
+.content {
+  flex: 1; /* Make each content section fill remaining space */
+  padding: 1rem;
+  overflow-y: auto; /* Enable vertical scrollbar only for content area */
+}
+
+.links {
+  display: flex; /* Makes the container a flexbox */
+  flex-direction: column; /* Stacks elements vertically */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 10px; /* Adds some padding */
+  border-radius: 5px; /* Adds rounded corners */
+  background-color: #eee; /* Light background color */
+}
+
+.links a {
+  color: #333; /* Link text color */
+  text-decoration: none; /* Removes underline */
+  padding: 5px 10px; /* Adds padding to each link */
+  margin-bottom: 5px; /* Adds space between links */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.links a:hover {
+  background-color: #ddd; /* Changes background on hover */
+}

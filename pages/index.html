@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptography Virtual LAB</title>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
   </head>
 
   <body>
@@ -13,7 +13,7 @@
       <h1>Cryptography Virtual LAB</h1>
       <nav>
         <button id="homeBtn">Home</button>
-        <button id="contactBtn">Contact Us</button>
+        <button id="aboutBtn">About Us</button>
       </nav>
     </header>
     <main>
@@ -82,19 +82,35 @@
           </ol>
         </div>
         <div class="content" id="symmetricCryptography">
-          <p>This is the Symmetric Cryptography content.</p>
+          <h1>Symmetric Cryptography</h1>
+          <p><b>Symmetric cryptography</b>, known also as secret key cryptography, is the use of a single shared secret to share encrypted data between parties. Ciphers in this category are called symmetric because you use the same key to encrypt and to decrypt the data. In simple terms, the sender encrypts data using a password, and the recipient must know that password to access the data.Symmetric encryption is a two-way process. With a block of plaintext and a given key, symmetric ciphers will always produce the same ciphertext. Likewise, using that same key on that block of ciphertext will always produce the original plaintext. Symmetric encryption is useful for protecting data between parties with an established shared key and is also frequently used to store confidential data. For example, ASP.NET uses 3DES to encrypt cookie data for a forms authentication ticket.</p>
+          <div>
+            <img src="../images/symmetricimg1.jpeg"/>
+          </div>
         </div>
         <div class="content" id="asymmetricCryptography">
-          <p>This is the Asymmetric Cryptography content.</p>
+          <h1>Asymmetric Cryptography</h1>
+          <p>Asymmetric cryptography, also known as public key cryptography, is a process that uses a pair of related keys -- one public key and one private key -- to encrypt and decrypt a message and protect it from unauthorized access or use.</p>
+          <p>A public key is a cryptographic key a person can use to encrypt a message so it can only be decrypted by the intended recipient with their private key. A private key -- also known as a secret key -- is shared only with the key's initiator.
+          When someone wants to send an encrypted message, they pull the intended recipient's public key from a public directory and use it to encrypt the message before sending it. The recipient of the message can decrypt the message using their related private key. If the sender encrypts the message using their private key, the message can be decrypted only using that sender's public key, thus authenticating the sender. These encryption and decryption processes happen automatically; users do not need to physically lock and unlock the message. Many protocols rely on asymmetric cryptography, including Transport Layer Security (TLS) and Secure Sockets Layer(SSL), which make HTTPS possible. The encryption process is also used in software programs that need to establish a secure connection over an insecurenetwork, such as web browsers, or that need to validate a digital signature. Increased data security is the primary benefit of asymmetric cryptography. It is the most secure encryption processbecause users are never required to reveal or share their private keys, decreasing the chances of a cybercriminaldiscovering a user's private key during transmission.</p>
+          <div>
+            <img src="../images/asymmetricimg1.png" style="width: 60vh; height: auto;"/>
+          </div>
         </div>
         <div class="content" id="simulator">
-          <p>This is the Simulator content.</p>
+          <h1>Simulator</h1>
+          <h3>Kindly select the algorithm to simulate:</h3>
+          <div class="links">
+            <a href="../pages/symmetric_des.html">Symmetric Cryptography - DES</a>
+            <a href="../pages/symmetric_aes.html">Symmetric Cryptography - AES</a>
+            <a href="../pages/asymmetric_rsa.html">Asymmetric Cryptography - RSA</a>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>www.cryptography-virtuallab.com &copy; 2024 to Priyank Sharma</p>
+      <p>&copy; 2024 Priyank Sharma & Lakshay Mahani</p>
     </footer>
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>

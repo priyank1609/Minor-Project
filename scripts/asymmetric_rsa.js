@@ -23,12 +23,12 @@ navItems.forEach(navItem => {
 });
 
 const headerHomeButton = document.getElementById("homeBtn");
-const headerContactUsButton = document.getElementById("contactBtn");
+const headerAboutUsButton = document.getElementById("aboutBtn");
 
 headerHomeButton.addEventListener('click', () => {
   window.location.href = 'index.html'; // Redirect to index.html
 });
 
-headerContactUsButton.addEventListener('click', () => {
-  alert("Contact Us page is under construction.");
+headerAboutUsButton.addEventListener('click', () => {
+  window.location.href = 'aboutUs.html'; // Redirect to aboutUs.html
 });

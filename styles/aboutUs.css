@@ -46,10 +46,14 @@ header nav button:hover {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
-main { /* Apply flexbox and set height to 100% */
-  display: flex;
-  flex: 1; /* Make main element grow */
-  height: 100%; /* Set height to 100% explicitly */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.5;
 }
 
 aside {
@@ -139,4 +143,25 @@ footer {
   flex: 1; /* Make each content section fill remaining space */
   padding: 1rem;
   overflow-y: auto; /* Enable vertical scrollbar only for content area */
+}
+
+.links {
+  display: flex; /* Makes the container a flexbox */
+  flex-direction: column; /* Stacks elements vertically */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 10px; /* Adds some padding */
+  border-radius: 5px; /* Adds rounded corners */
+  background-color: #eee; /* Light background color */
+}
+
+.links a {
+  color: #333; /* Link text color */
+  text-decoration: none; /* Removes underline */
+  padding: 5px 10px; /* Adds padding to each link */
+  margin-bottom: 5px; /* Adds space between links */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.links a:hover {
+  background-color: #ddd; /* Changes background on hover */
 }
