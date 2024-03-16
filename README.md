@@ -1,6 +1,6 @@
 # Title: Virtual Cryptography Lab
 
-# Description: An interactive web-based learning tool for exploring the fundamentals of cryptography and its various types. This virtual lab provides visual simulations to enhance comprehension and user engagement.
+## Description: An interactive web-based learning tool for exploring the fundamentals of cryptography and its various types. This virtual lab provides visual simulations to enhance comprehension and user engagement.
 
 ## Features
 
