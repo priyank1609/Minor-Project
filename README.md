@@ -2,6 +2,8 @@
 
 # Description: An interactive web-based learning tool for exploring the fundamentals of cryptography and its various types. This virtual lab provides visual simulations to enhance comprehension and user engagement.
 
+## Features
+
 * **Comprehensive Coverage:** Introduces key cryptographic concepts in a clear and concise manner.
 * **Interactive Simulations:** Visually demonstrates different encryption and decryption algorithms for a deeper understanding.
 * **User-Friendly Interface:** Designed for ease of use and navigation.
