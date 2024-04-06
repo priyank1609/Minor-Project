@@ -34,16 +34,70 @@
       </aside>
       <section id="contentArea">
         <div class="content" id="aim">
-          <p>this is aim content</p>
+          <p>In this experiment, you are asked to encrypt long messages using various modes of operation wherein a block cipher (in this case, AES) is provided to you .</p>
         </div>
         <div class="content" id="theory">
-          <p>this is theory content</p>
+          <h2>AES Encryption Algorithm</h2>
+          <p><b>Advanced Encryption Standard (AES)</b> is a specification for the encryption of electronic data established by the U.S National Institute of Standards and Technology (NIST) in 2001. AES is widely used today as it is a much stronger than DES and triple DES despite being harder to implement.</p>
+          <ul>
+            <li>AES is a block cipher.</li>
+            <li>The key size can be 128/192/256 bits.</li>
+            <li>Encrypts data in blocks of 128 bits each.</li>
+          </ul>
+          <p>That means it takes 128 bits as input and outputs 128 bits of encrypted cipher text as output. AES relies on substitution-permutation network principle which means it is performed using a series of linked operations which involves replacing and shuffling of the input data.</p>
+          <h3>What are the Features of AES?</h3>
+          <ol>
+            <li>SP Network: It works on an SP network structure rather than a Feistel cipher structure, as seen in the case of the DES algorithm.</li>
+            <li>Key Expansion: It takes a single key up during the first stage, which is later expanded to multiple keys used in individual rounds.</li>
+            <li>Byte Data: The AES encryption algorithm does operations on byte data instead of bit data. So it treats the 128-bit block size as 16 bytes during the encryption procedure.</li>
+            <li>Key Length: The number of rounds to be carried out depends on the length of the key being used to encrypt data. The 128-bit key size has ten rounds, the 192-bit key size has 12 rounds, and the 256-bit key size has 14 rounds.</li>
+          </ol>
         </div>
         <div class="content" id="procedure">
-          <p>this is procedure content</p>
+          <h2>Procedure</h2>
+          <h4>Part - 1</h4>
+          <ol>
+            <li><p>Enter a message that need to be encrypted.</p></li>
+            <li><p>Click the <b>Generate Secret Key</b> button to generate a public key for encryption at sender's end.</p></li>
+          </ol>
+          <h4>Part - 2</h4>
+          <ol>
+            <li><p>Click the <b>Encrypt Message (Using Secret Key)</b> button to generate an encrypted message using the provided message in the Part - 1 and this encrypted message will be sent to the reciever.</p></li>
+            <li><p>Click the <b>Decrypt Message (Using Secret Key)</b> button to decrypt the encrypted message which was sent by the reciever.</p></li>
+          </ol>
+          <h4>Part - 3(Conclusion)</h4>
+          <p>As we can see that our Original message and Decrypted message is same then we can assume that the message is not tampered in between.</p>
         </div>
         <div class="content" id="simulation">
-          <p>this is simulation content</p>
+          <h2>Symmetric Cryptography Simulator</h2>
+          <div id="message-parent">
+            <div class="message-container">
+              <label for="message">Enter your message:</label>
+              <textarea id="message" rows="5" cols="50"></textarea>
+              <div id="buttongroup1">
+                <button id="genSecretKey">Generate Secret Key</button>
+                <button id="clearAll">Clear All</button>
+              </div>
+              <div class="keyDiv">
+                <label for="encSecretKeyInput">Secret Key:</label>
+                <textarea id="encSecretKeyInput" rows="5" cols="50" style="margin-top: 8px;" disabled="true"></textarea>
+                <br>
+                <div id="buttongroup1">
+                  <button id="encSecretKey">Encrypt Message (Using Secret Key)</button>
+                  <button id="decSecretKey">Decrypt Message (Using Secret Key)</button>
+                </div>
+              </div>
+            </div>
+            <div class="message-container">
+              <div class="messageDiv">
+                <label for="encryptedMessage">Encrypted Message:</label>
+                <textarea id="encryptedMessage" rows="5" cols="50" style="margin-top: 8px;" disabled="true"></textarea>
+                <br>
+                <label for="decryptedMessage">Decrypted Message:</label>
+                <textarea id="decryptedMessage" rows="5" cols="50" style="margin-top: 8px;" disabled="true"></textarea>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

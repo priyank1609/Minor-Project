@@ -26,24 +26,28 @@
           <button href="#" data-content="theory">Theory</button>
         </div>
         <div class="nav-item">
-          <button href="#" data-content="procedure">Procedure</button>
-        </div>
-        <div class="nav-item">
           <button href="#" data-content="simulation">Simulation</button>
         </div>
       </aside>
       <section id="contentArea">
         <div class="content" id="aim">
-          <p>this is aim content</p>
+          <p>In this experiment, you are asked to encrypt long messages using various modes of operation wherein a block cipher (in this case, DES) is provided to you .</p>
         </div>
         <div class="content" id="theory">
-          <p>this is theory content</p>
-        </div>
-        <div class="content" id="procedure">
-          <p>this is procedure content</p>
+          <h2>DES Encryption Algorithm</h2>
+          <p>DES stands for <b>Data Encryption Standard</b>. There are certain machines that can be used to crack the DES algorithm. The DES algorithm uses a key of 56-bit size. Using this key, the DES takes a block of 64-bit plain text as input and generates a block of 64-bit cipher text.</p>
+          <p>The DES process has several steps involved in it, where each step is called a round. Depending upon the size of the key being used, the number of rounds varies. For example, a 128-bit key requires 10 rounds, a 192-bit key requires 12 rounds, and so on.</p>
+          <h3>What is the DES Algorithm in Cyber Security?</h3>
+          <p>The DES (Data Encryption Standard) algorithm is a symmetric-key block cipher created in the early 1970s by an IBM team and adopted by the National Institute of Standards and Technology (NIST). The algorithm takes the plain text in 64-bit blocks and converts them into ciphertext using 48-bit keys.</p>
+          <p>Since it’s a symmetric-key algorithm, it employs the same key in both encrypting and decrypting the data. If it were an asymmetrical algorithm, it would use different keys for encryption and decryption.</p>
+          <h3>History of DES Algorithm</h3>
+          <p>DES is based on the Feistel block cipher, called LUCIFER, developed in 1971 by IBM cryptography researcher Horst Feistel. DES uses 16 rounds of the Feistel structure, using a different key for each round.</p>
+          <p>DES became the approved federal encryption standard in November 1976 and was subsequently reaffirmed as the standard in 1983, 1988, and 1999.</p>
+          <p>DES’s dominance came to an end in 2002, when the Advanced Encryption Standard (AES) replaced the DES encryption algorithm as the accepted standard, following a public competition to find a replacement. The NIST officially withdrew FIPS 46-3 (the 1999 reaffirmation) in May 2005, although Triple DES (3DES), remains approved for sensitive government information through 2030.</p>
         </div>
         <div class="content" id="simulation">
-          <p>this is simulation content</p>
+          <h2>Symmetric Cryptography Simulator</h2>
+          <p>Due to security limitations, modern browsers don't directly support the DES algorithm. However,  you can achieve symmetric cryptography using a more secure alternative like AES with the built-in Crypto API. To do that simulation go to the <a href="symmetric_aes.html" style="text-decoration: none; font-size: x-large;">Symmetric Cryptography - AES</a> part.</p>
         </div>
       </section>
     </main>
